@@ -6,14 +6,17 @@ class Rectangle(object):
 
 
     def __init__(self, width, height):
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
         
-    def getWidth(self):
-        return self.width
+    @property
+    def width(self):
+        return self.__width
     
-    def getHeight(self):
-        return self.height
+    @property
+    def height(self):
+        return self.__height
     
+    @property
     def area(self):
-        return self.width * self.height
+        return self.__width * self.__height
