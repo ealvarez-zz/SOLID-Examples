@@ -4,4 +4,4 @@ class AudioFile(object):
         self.filetype = filetype
 
     def play(self):
-        pass
+        raise NotImplementedError()
