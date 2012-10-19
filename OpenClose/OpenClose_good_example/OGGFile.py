@@ -1,8 +1,8 @@
 from AudioFile import *
 
 class OGGFile(AudioFile):
-	def __init__(self, filename):
-		AudioFile.__init__(self, filename, 'OGG')
+    def __init__(self, filename):
+        AudioFile.__init__(self, filename, 'OGG')
 
-	def play(self):
-		print 'Playing OGG file'
+    def play(self):
+        print 'Playing OGG file'
